@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.dell.furcatcher1.signup"
 
-    android:background="@drawable/background">
+    android:background="@drawable/backgroundforlarge">
 
 
     <TextView
