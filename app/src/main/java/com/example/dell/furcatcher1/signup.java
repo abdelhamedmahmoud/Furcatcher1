@@ -230,7 +230,7 @@ public class signup extends AppCompatActivity {
                 }
                 else
                 {
-//                    onSignup();
+                    onSignup();
                 }
 
             }
