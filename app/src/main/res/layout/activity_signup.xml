@@ -4,11 +4,188 @@
     android:id="@+id/activity_signup"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.dell.furcatcher1.signup"
-    >
+
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="2"
+        android:id="@+id/signupflag"
+        android:text="Already Have An Account? "
+        android:fontFamily="monospace"
+        android:gravity="left|center"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        android:textColorHint="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"
+        android:layout_width="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/ev"
+        android:layout_alignEnd="@+id/ev"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:paddingLeft="5dp" />
+
+    <EditText
+        android:layout_height="65dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:drawableLeft="@drawable/kiko"
+        android:drawablePadding="20dp"
+        android:background="@drawable/bo"
+        android:fontFamily="monospace"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/colorAccent"
+        android:textSize="11sp"
+        android:hint="Enter Your Email"
+        android:textColorHint="@color/colorAccent"
+        android:textStyle="bold"
+        android:foreground="@drawable/shape2"
+        android:layout_width="265dp"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/Register"
+        android:layout_alignLeft="@+id/cPassword"
+        android:layout_alignStart="@+id/cPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cpv"
+        android:background="@drawable/hello"
+        android:layout_alignBaseline="@+id/cPassword"
+        android:layout_alignBottom="@+id/cPassword"
+        android:layout_alignLeft="@+id/uv"
+        android:layout_alignStart="@+id/uv"
+        android:alpha="0" />
+
+    <EditText
+        android:layout_height="65dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:drawableLeft="@drawable/kikopass"
+        android:drawablePadding="20dp"
+        android:fontFamily="monospace"
+        android:background="@drawable/bo"
+        android:foreground="@drawable/shape2"
+        android:textColorHint="#ffff8800"
+        android:hint="Enter Your password"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:textColor="#ffff8800"
+
+        android:layout_width="265dp"
+        android:layout_above="@+id/cPassword"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginBottom="13dp" />
+
+    <Button
+        android:id="@+id/Register"
+        android:background="@drawable/bt"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/signupflag"
+        android:layout_alignLeft="@+id/signupflag"
+        android:layout_alignStart="@+id/signupflag" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ev"
+        android:background="@drawable/hello"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignBottom="@+id/email"
+        android:layout_alignLeft="@+id/cpv"
+        android:layout_alignStart="@+id/cpv"
+        android:alpha="0" />
+
+    <EditText
+        android:layout_height="65dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/cPassword"
+        android:drawableLeft="@drawable/kikopass"
+        android:drawablePadding="20dp"
+        android:fontFamily="monospace"
+        android:gravity="left|center_vertical"
+        android:background="@drawable/bo"
+        android:foreground="@drawable/shape2"
+        android:textColorHint="@color/colorAccent"
+        android:hint="Confirm Your password"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_width="265dp"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/email"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pv"
+        android:background="@drawable/hello"
+        android:layout_alignBaseline="@+id/password"
+        android:layout_alignBottom="@+id/password"
+        android:layout_toRightOf="@+id/password"
+        android:layout_toEndOf="@+id/password"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:alpha="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uv"
+        android:background="@drawable/hello"
+        android:layout_alignBaseline="@+id/username"
+        android:layout_alignBottom="@+id/username"
+        android:layout_alignLeft="@+id/pv"
+        android:layout_alignStart="@+id/pv"
+        android:alpha="0" />
+
+    <TextView
+        android:text="SIGN IN"
+        android:layout_height="wrap_content"
+        android:id="@+id/flag"
+        android:textSize="10sp"
+        android:background="@drawable/round"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/signupflag"
+        android:layout_alignBottom="@+id/signupflag"
+        android:layout_alignRight="@+id/Register"
+        android:layout_alignEnd="@+id/Register"
+        android:layout_width="65dp" />
+
+    <EditText
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/username"
+        android:drawablePadding="20dp"
+        android:background="@drawable/bo"
+        android:fontFamily="monospace"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/colorAccent"
+        android:textSize="11sp"
+        android:hint="Enter Your username"
+        android:textColorHint="@color/colorAccent"
+        android:textStyle="bold"
+        android:alpha="1"
+        android:foreground="@drawable/shape2"
+        android:layout_height="65dp"
+        android:drawableLeft="@drawable/kikouser"
+        android:layout_width="265dp"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/password"
+        android:layout_alignLeft="@+id/cPassword"
+        android:layout_alignStart="@+id/cPassword" />
 
 </RelativeLayout>
