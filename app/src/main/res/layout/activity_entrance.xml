@@ -13,17 +13,6 @@
     android:background="@drawable/backgroundformedium">
 
 
-    <android.support.v4.view.ViewPager
-
-        android:layout_width="match_parent"
-        android:id="@+id/view_pager"
-        android:layout_above="@+id/indicator"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginRight="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_height="120dp"></android.support.v4.view.ViewPager>
-
     <Button
         android:layout_height="50dp"
         android:id="@+id/signinmainpage"
@@ -44,21 +33,6 @@
         android:layout_marginBottom="49dp"
         android:layout_width="135dp" />
 
-    <TextView
-        android:layout_height="50dp"
-        android:id="@+id/textView"
-        android:background="@drawable/round2"
-        android:text="Features"
-        android:gravity="center"
-        android:textStyle="bold|italic"
-        android:fontFamily="monospace"
-        android:layout_width="160dp"
-        android:textSize="14sp"
-        android:textColor="@android:color/background_light"
-        android:layout_above="@+id/view_pager"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="9dp" />
-
     <me.relex.circleindicator.CircleIndicator
         android:layout_height="42dp"
         android:layout_width="match_parent"
@@ -70,9 +44,37 @@
         app:ci_drawable="@drawable/sliderdot720"
         app:ci_height="10dp"
         app:ci_width="10dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="68dp"
         android:layout_above="@+id/signinmainpage"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"></me.relex.circleindicator.CircleIndicator>
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"></me.relex.circleindicator.CircleIndicator>
+
+    <TextView
+        android:id="@+id/textView"
+        android:background="@drawable/round2"
+        android:text="Features"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:fontFamily="monospace"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_light"
+        android:layout_above="@+id/view_pager"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_width="130dp"
+        android:layout_height="40dp" />
+
+    <android.support.v4.view.ViewPager
+
+        android:layout_width="wrap_content"
+        android:id="@+id/view_pager"
+        android:layout_height="90dp"
+        android:layout_above="@+id/indicator"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"></android.support.v4.view.ViewPager>
 
 </RelativeLayout>

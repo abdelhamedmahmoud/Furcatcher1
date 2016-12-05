@@ -21,7 +21,7 @@ public class SwipeAdapter extends FragmentStatePagerAdapter {
 
 
             if (i == 0)
-                bundle.putString("count", "you can replace this text with some information about the application");
+                bundle.putString("count", "you can replace this text with some information about the application and the benefits that the client is gonna get after using it");
             else if (i == 1)
                 bundle.putString("count", "kareem gamal El deen Mohamed");
             else
