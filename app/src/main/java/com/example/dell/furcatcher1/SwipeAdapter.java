@@ -19,15 +19,18 @@ public class SwipeAdapter extends FragmentStatePagerAdapter {
         Fragment fragment=new viewpager();
         Bundle bundle=new Bundle();
 
-        if  (i==0)
-            bundle.putString("count", "you can replace this text with some information about the application");
-        else         if  (i==1)
-            bundle.putString("count", "");
-        else
-            bundle.putString("count", "");
 
-        fragment.setArguments(bundle);
-        return fragment;
+            if (i == 0)
+                bundle.putString("count", "you can replace this text with some information about the application");
+            else if (i == 1)
+                bundle.putString("count", "kareem gamal El deen Mohamed");
+            else
+                bundle.putString("count", "abdelhamded mahmoud abdelhamed");
+
+            fragment.setArguments(bundle);
+            return fragment;
+
+
     }
 
     @Override

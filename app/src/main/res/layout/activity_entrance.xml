@@ -52,12 +52,12 @@
         android:gravity="center"
         android:textStyle="bold|italic"
         android:fontFamily="monospace"
+        android:layout_width="160dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_light"
         android:layout_above="@+id/view_pager"
         android:layout_centerHorizontal="true"
-        android:layout_width="160dp"
-        android:layout_marginBottom="10dp"
-        android:textSize="14sp"
-        android:textColor="@android:color/background_light" />
+        android:layout_marginBottom="9dp" />
 
     <me.relex.circleindicator.CircleIndicator
         android:layout_height="42dp"
@@ -70,7 +70,7 @@
         app:ci_drawable="@drawable/sliderdot720"
         app:ci_height="10dp"
         app:ci_width="10dp"
-        android:layout_marginBottom="51dp"
+        android:layout_marginBottom="72dp"
         android:layout_above="@+id/signinmainpage"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"></me.relex.circleindicator.CircleIndicator>
