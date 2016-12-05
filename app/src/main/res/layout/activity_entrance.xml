@@ -13,6 +13,52 @@
     android:background="@drawable/backgroundformedium">
 
 
+    <android.support.v4.view.ViewPager
+
+        android:layout_width="match_parent"
+        android:id="@+id/view_pager"
+        android:layout_above="@+id/indicator"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_height="120dp"></android.support.v4.view.ViewPager>
+
+    <Button
+        android:layout_height="50dp"
+        android:id="@+id/signinmainpage"
+        android:background="@drawable/signinmainpage720"
+        android:layout_marginBottom="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="135dp" />
+
+    <Button
+        android:layout_height="50dp"
+        android:id="@+id/registermainpage"
+        android:background="@drawable/registermainpage720"
+        android:layout_below="@+id/indicator"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="49dp"
+        android:layout_width="135dp" />
+
+    <TextView
+        android:layout_height="50dp"
+        android:id="@+id/textView"
+        android:background="@drawable/round2"
+        android:text="Features"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:fontFamily="monospace"
+        android:layout_above="@+id/view_pager"
+        android:layout_centerHorizontal="true"
+        android:layout_width="160dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_light" />
+
     <me.relex.circleindicator.CircleIndicator
         android:layout_height="42dp"
         android:layout_width="match_parent"
@@ -21,50 +67,12 @@
 
 
         tools:targetApi="ice_cream_sandwich"
-        android:layout_marginBottom="71dp"
         app:ci_drawable="@drawable/sliderdot720"
         app:ci_height="10dp"
         app:ci_width="10dp"
+        android:layout_marginBottom="50dp"
         android:layout_above="@+id/signinmainpage"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"></me.relex.circleindicator.CircleIndicator>
-
-    <android.support.v4.view.ViewPager
-
-        android:layout_height="100dp"
-        android:layout_width="match_parent"
-        android:id="@+id/view_pager"
-        android:layout_above="@+id/indicator"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"></android.support.v4.view.ViewPager>
-
-    <Button
-        android:layout_width="130dp"
-        android:layout_height="50dp"
-        android:id="@+id/signinmainpage"
-        android:background="@drawable/signinmainpage720"
-        android:layout_marginBottom="49dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
-        android:id="@+id/textView"
-        android:background="@drawable/slidertitle720"
-        android:layout_marginBottom="13dp"
-        android:layout_above="@+id/view_pager"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="130dp"
-        android:layout_height="50dp"
-        android:id="@+id/registermainpage"
-        android:background="@drawable/registermainpage720"
-        android:layout_below="@+id/indicator"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
