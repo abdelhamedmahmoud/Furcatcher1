@@ -11,6 +11,7 @@
     tools:context="com.example.dell.furcatcher1.splash"
     android:background="@drawable/splash"
     android:elevation="1dp"
-    android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+    android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+    tools:targetApi="ice_cream_sandwich">
 
 </RelativeLayout>
