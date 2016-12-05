@@ -163,7 +163,8 @@
         android:layout_alignBottom="@+id/signupflag"
         android:layout_alignRight="@+id/Register"
         android:layout_alignEnd="@+id/Register"
-        android:layout_width="65dp" />
+        android:layout_width="65dp"
+        />
 
     <EditText
         android:inputType="textPersonName"

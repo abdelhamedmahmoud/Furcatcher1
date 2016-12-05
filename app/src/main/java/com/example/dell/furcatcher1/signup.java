@@ -3,6 +3,7 @@ package com.example.dell.furcatcher1;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
@@ -242,7 +243,10 @@ public class signup extends AppCompatActivity {
         Sign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(signup.this, "Login Activity Here We Come!!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(signup.this, login.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                //Toast.makeText(signup.this, "Login Activity Here We Come!!", Toast.LENGTH_SHORT).show();
             }
         });
 /////////////////////////////////////////////////////////////////////////////////
@@ -374,6 +378,7 @@ cPass.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 
 
     }
+
 }
 
 
