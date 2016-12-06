@@ -10,4 +10,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.dell.furcatcher1.scan">
 
+
+    <ImageView
+        android:layout_width="match_parent"
+
+        android:id="@+id/scanview"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Scan"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:text="Scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Scan"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+
 </RelativeLayout>

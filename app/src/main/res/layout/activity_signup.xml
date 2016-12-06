@@ -28,7 +28,7 @@
         android:layout_alignEnd="@+id/ev"
         android:layout_alignLeft="@+id/email"
         android:layout_alignStart="@+id/email"
-        android:paddingLeft="9dp" />
+        android:paddingLeft="6dp" />
 
     <EditText
         android:layout_height="65dp"
@@ -38,7 +38,7 @@
         android:drawableLeft="@drawable/kiko"
         android:drawablePadding="20dp"
         android:background="@drawable/bo"
-        android:fontFamily="monospace"
+        android:fontFamily="casual"
         android:gravity="left|center_vertical"
         android:textColor="@color/colorAccent"
         android:textSize="11sp"
@@ -70,7 +70,7 @@
         android:id="@+id/password"
         android:drawableLeft="@drawable/kikopass"
         android:drawablePadding="20dp"
-        android:fontFamily="monospace"
+        android:fontFamily="casual"
         android:background="@drawable/bo"
         android:foreground="@drawable/shape2"
         android:textColorHint="#ffff8800"
@@ -106,27 +106,6 @@
         android:layout_alignStart="@+id/cpv"
         android:alpha="0" />
 
-    <EditText
-        android:layout_height="65dp"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/cPassword"
-        android:drawableLeft="@drawable/kikopass"
-        android:drawablePadding="20dp"
-        android:fontFamily="monospace"
-        android:gravity="left|center_vertical"
-        android:background="@drawable/bo"
-        android:foreground="@drawable/shape2"
-        android:textColorHint="@color/colorAccent"
-        android:hint="Confirm Your password"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorAccent"
-        android:layout_width="265dp"
-        android:layout_marginBottom="13dp"
-        android:layout_above="@+id/email"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -157,7 +136,7 @@
         android:id="@+id/username"
         android:drawablePadding="20dp"
         android:background="@drawable/bo"
-        android:fontFamily="monospace"
+        android:fontFamily="casual"
         android:gravity="left|center_vertical"
         android:textColor="@color/colorAccent"
         android:textSize="11sp"
@@ -189,5 +168,26 @@
         android:layout_toStartOf="@+id/pv"
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp" />
+
+    <EditText
+        android:layout_height="65dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/cPassword"
+        android:drawableLeft="@drawable/kikopass"
+        android:drawablePadding="20dp"
+        android:fontFamily="casual"
+        android:gravity="left|center_vertical"
+        android:background="@drawable/bo"
+        android:foreground="@drawable/shape2"
+        android:textColorHint="@color/colorAccent"
+        android:hint="Confirm Your password"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_width="265dp"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/email"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

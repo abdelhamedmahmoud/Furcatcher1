@@ -20,6 +20,7 @@ public class SwipeAdapter extends FragmentStatePagerAdapter {
         Bundle bundle=new Bundle();
 
 
+
             if (i == 0)
                 bundle.putString("count", "you can replace this text with some information about the application and the benefits that the client is gonna get after using it");
             else if (i == 1)
