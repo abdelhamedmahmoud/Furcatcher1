@@ -1,12 +1,9 @@
 package com.example.dell.furcatcher1;
 
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Paint;
-import android.graphics.drawable.Drawable;
-import android.os.Build;
+import android.graphics.Typeface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,13 +20,11 @@ import android.widget.Toast;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static android.R.attr.button;
-import static android.R.attr.id;
-
 public class signup extends AppCompatActivity {
     EditText username, pass, cPass, email;
-    TextView Sign, userv, passv, cpassv, emailv;
+    TextView Sign, userv, passv, cpassv, emailv , Signplus;
     String us, pas, cpas, e_mail ;
+    Typeface my_Custom;
 
 
 
@@ -37,21 +32,26 @@ public class signup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-
+        my_Custom = Typeface.createFromAsset(getAssets() , "fonts/SEGOEUI.TTF");
 
         username = (EditText) findViewById(R.id.username);
         username.requestFocus();
 
-        pass = (EditText) findViewById(R.id.password);
+        pass = (EditText) findViewById(R.id.passwordLogin);
         email = (EditText) findViewById(R.id.email);
         cPass = (EditText) findViewById(R.id.cPassword);
-
+        username.setTypeface(my_Custom);
+        pass.setTypeface(my_Custom);
+        cPass.setTypeface(my_Custom);
+        email.setTypeface(my_Custom);
 
         userv = (TextView) findViewById(R.id.uv);
         passv = (TextView) findViewById(R.id.pv);
         cpassv = (TextView) findViewById(R.id.cpv);
         emailv = (TextView) findViewById(R.id.ev);
         Sign = (TextView)findViewById(R.id.flag);
+        Signplus = (TextView)findViewById(R.id.signupflag);
+        Signplus.setTypeface(my_Custom);
 
 //////////////////////////// Text listener For Making Validation /////////
         username.addTextChangedListener(new TextWatcher() {

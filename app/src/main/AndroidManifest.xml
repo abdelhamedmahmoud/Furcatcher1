@@ -8,7 +8,7 @@
     <application
         android:name=".FaceBookHash"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="Furcatcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -17,7 +17,10 @@
             android:name=".signup"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
-        <activity android:name=".login" />
+
+        <activity android:name=".login"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -32,8 +35,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
         <activity android:name=".scan" />
-        <activity android:name=".start"></activity>
+
+
+        <activity android:name=".start"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            ></activity>
     </application>
 
 </manifest>

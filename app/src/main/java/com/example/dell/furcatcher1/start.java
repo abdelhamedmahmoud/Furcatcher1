@@ -35,7 +35,7 @@ public class start extends AppCompatActivity {
         setContentView(R.layout.activity_start);
 
         TextView textView = (TextView) findViewById(R.id.info);
-        textView.setText(login.name);
+        textView.setText("Welcome "+ login.name);
 
         Button b = (Button)findViewById(R.id.go);
         b.setOnClickListener(new View.OnClickListener() {
