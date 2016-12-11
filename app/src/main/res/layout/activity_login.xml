@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.dell.furcatcher1.login"
-    android:background="@drawable/backgroundforlarge">
+    android:background="@drawable/backgroundformedium">
 
 
         <EditText
@@ -43,6 +43,25 @@
             android:layout_marginTop="19dp"
             android:layout_marginBottom="9dp" />
 
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/gplus"
+            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_below="@+id/face"
+            android:layout_alignStart="@+id/face"
+            android:layout_alignEnd="@+id/face" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/face"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:elevation="14dp"
+            android:layout_height="wrap_content"
+            android:layout_width="105dp"
+            android:layout_below="@+id/Register"
+            android:layout_alignStart="@+id/Register"
+            android:layout_alignEnd="@+id/Register" />
+
         <EditText
             android:inputType="textPersonName"
             android:ems="10"
@@ -51,9 +70,7 @@
             android:layout_height="65dp"
             android:drawableLeft="@drawable/user"
             android:layout_width="265dp"
-            android:layout_marginTop="204dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
+            android:layout_marginTop="177dp"
             android:foreground="@drawable/shape2"
             android:hint="Enter Your username"
             android:textColorHint="@color/colorAccent"
@@ -61,25 +78,9 @@
             android:gravity="left|center"
             android:drawablePadding="20dp"
             android:fontFamily="casual"
-            android:textStyle="bold|italic" />
-
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/gplus"
-            android:layout_height="wrap_content"
-            android:layout_width="110dp"
-            android:layout_alignBottom="@+id/face"
-            android:layout_alignEnd="@+id/Register"
-            android:layout_alignTop="@+id/face" />
-
-        <com.facebook.login.widget.LoginButton
-            android:id="@+id/face"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-            android:elevation="14dp"
-            android:layout_height="wrap_content"
-            android:layout_width="106dp"
-            android:layout_below="@+id/Register"
-            android:layout_alignStart="@+id/Register" />
+            android:textStyle="bold|italic"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

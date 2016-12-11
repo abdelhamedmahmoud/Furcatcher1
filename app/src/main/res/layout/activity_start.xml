@@ -6,164 +6,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.dell.furcatcher1.start"
-    android:background="@drawable/startforlarge">
+    android:background="@drawable/startformedium">
 
-
-    <TextView
-        android:text="Scanning the QR code with Phone Camera to display Furniture"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView7"
-        android:layout_marginStart="15dp"
-        android:layout_width="150dp"
-        android:gravity="center"
-        android:fontFamily="casual"
-        android:textSize="10sp"
-        android:textColor="@android:color/white"
-        android:textStyle="bold|italic"
-        android:layout_below="@+id/go"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="6dp" />
-
-    <Button
-        android:text="to scan"
-        android:id="@+id/go"
-        android:layout_marginStart="32dp"
-        android:background="@drawable/round3"
-        android:foreground="@drawable/scanqr"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/textView3" />
-
-    <TextView
-        android:text="Scan QR Code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:id="@+id/textView4"
-        android:gravity="center"
-        android:background="@drawable/round"
-        android:layout_below="@+id/textView3"
-        android:layout_alignStart="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3"
-        android:textColor="@color/colorPrimary" />
-
-    <Button
-        android:text="Button"
-        android:layout_marginEnd="48dp"
-        android:id="@+id/button3"
-        android:foreground="@drawable/exforone"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_above="@+id/textView3"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/round3" />
-
-    <TextView
-        android:text="Scanning the QR code with Phone Camera to display Furniture"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView3"
-        android:layout_marginStart="15dp"
-        android:layout_width="150dp"
-        android:gravity="center"
-        android:fontFamily="casual"
-        android:textSize="10sp"
-        android:textColor="@android:color/white"
-        android:textStyle="bold|italic"
-        android:layout_below="@+id/go"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="6dp" />
-
-    <TextView
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView5"
-        android:text="Use this option To Explore only one piece from our furniture Store"
-        android:gravity="center"
-        android:textSize="10sp"
-        android:textStyle="bold|italic"
-        android:fontFamily="casual"
-        android:textColor="@android:color/white"
-        android:layout_below="@+id/button3"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="12dp"
-        android:layout_marginTop="6dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView4"
-        android:layout_alignStart="@+id/textView5"
-        android:id="@+id/textView6"
-        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignTop="@+id/scango"
+        android:layout_alignStart="@+id/exonetex"
+        android:id="@+id/exploreforone"
+        android:layout_alignEnd="@+id/exonetex"
         android:text="Explore One Piece"
         android:gravity="center"
-        android:background="@drawable/round"
-        android:textColor="@color/colorPrimary" />
-
-    <Button
-        android:text="Button"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@+id/textView4"
-        android:layout_alignStart="@+id/go"
-        android:layout_marginTop="16dp"
-        android:id="@+id/button4"
-        android:background="@drawable/round3"
-        android:foreground="@drawable/exformultiple" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView8"
-        android:layout_alignStart="@+id/textView8"
-        android:id="@+id/textView9"
-        android:layout_alignEnd="@+id/textView8"
-        android:gravity="center"
-        android:background="@drawable/round"
+        android:background="@drawable/rectangle"
         android:textColor="@color/colorPrimary"
-        android:text="Explore Multi Pieces" />
-
-    <TextView
-        android:text="use this option to explore multiple pieces from our furniture store"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView8"
-        android:gravity="center"
-        android:textSize="10sp"
-        android:textStyle="bold|italic"
-        android:textColor="@android:color/white"
-        android:fontFamily="casual"
-        android:layout_below="@+id/button4"
-        android:layout_alignStart="@+id/textView4"
-        android:layout_marginTop="6dp"
-        android:layout_marginBottom="3dp" />
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_marginTop="0dp" />
 
     <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:id="@+id/button5"
         android:background="@drawable/round3"
-        android:foreground="@drawable/about"
+        android:foreground="@drawable/iconforstart2"
         android:layout_alignTop="@+id/button4"
-        android:layout_alignStart="@+id/button3" />
+        android:layout_alignStart="@+id/button3"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
 
     <TextView
-        android:text="About App and Team"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView9"
-        android:layout_alignStart="@+id/textView10"
-        android:id="@+id/textView11"
-        android:layout_alignEnd="@+id/textView10"
-        android:background="@drawable/round"
-        android:textColor="@color/colorPrimary"
-        android:gravity="center" />
-
-    <TextView
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView10"
+        android:id="@+id/abouttex"
         android:gravity="center"
         android:text="use this option if you want to know about app and team"
         android:textStyle="bold|italic"
@@ -171,19 +43,137 @@
         android:textSize="10sp"
         android:fontFamily="casual"
         android:layout_below="@+id/button5"
-        android:layout_alignStart="@+id/textView6"
-        android:layout_marginTop="6dp" />
+        android:layout_alignStart="@+id/exploreforone"
+        android:layout_marginTop="6dp"
+        android:layout_width="155dp" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/round3"
+        android:foreground="@drawable/iconforstart1"
+        android:layout_marginTop="255dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/info"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:text="use this option to explore multiple pieces from our furniture store"
+        android:layout_height="wrap_content"
+        android:id="@+id/exmanytex"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/white"
+        android:fontFamily="casual"
+        android:layout_alignBaseline="@+id/abouttex"
+        android:layout_alignBottom="@+id/abouttex"
+        android:layout_alignStart="@+id/scango"
+        android:layout_width="155dp" />
+
+    <TextView
+        android:text="Scan QR Code"
+        android:layout_height="wrap_content"
+        android:id="@+id/scango"
+        android:gravity="center"
+        android:background="@drawable/rectangle"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/scantex"
+        android:layout_alignStart="@+id/scantex"
+        android:layout_alignEnd="@+id/scantex"
+        android:layout_width="20dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/exonetex"
+        android:text="Use this option To Explore only one piece from our furniture Store"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        android:fontFamily="casual"
+        android:textColor="@android:color/white"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="158dp"
+        android:layout_marginLeft="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exploretomany"
+        android:gravity="center"
+        android:background="@drawable/rectangle"
+        android:textColor="@color/colorPrimary"
+        android:text="Explore Multi Pieces"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_below="@+id/exmanytex"
+        android:layout_alignStart="@+id/exmanytex"
+        android:layout_alignEnd="@+id/exmanytex" />
+
+    <TextView
+        android:text="Scanning the QR code with Phone Camera to display Furniture"
+        android:id="@+id/scantex"
+        android:layout_marginStart="19dp"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:textSize="10sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:layout_height="43dp"
+        android:layout_width="155dp"
+        android:layout_below="@+id/go"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_marginEnd="21dp"
+        android:id="@+id/button3"
+        android:foreground="@drawable/iconforstart4"
+        android:background="@drawable/round3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/scantex"
+        android:layout_alignEnd="@+id/info" />
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:id="@+id/button4"
+        android:background="@drawable/round3"
+        android:foreground="@drawable/iconforstart3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/scango"
+        android:layout_alignStart="@+id/go" />
+
+    <TextView
+        android:text="About App and Team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/about"
+        android:background="@drawable/rectangle"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/abouttex"
+        android:layout_alignEnd="@+id/exploreforone"
+        android:layout_alignStart="@+id/abouttex" />
 
     <TextView
         android:id="@+id/info"
-        android:layout_height="wrap_content"
-        android:text="Welcome Kareem Gamal"
-        android:layout_marginBottom="27dp"
+        android:layout_marginBottom="39dp"
         android:gravity="center"
-        android:background="@drawable/round2"
-        android:textColor="@color/colorPrimary"
+        android:background="@drawable/rec2"
         android:layout_width="300dp"
-        android:layout_above="@+id/go"
-        android:layout_centerHorizontal="true" />
+        android:textColor="@color/colorPrimary"
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_height="25dp" />
 
 </RelativeLayout>

@@ -9,27 +9,6 @@
     android:background="@drawable/backgroundformedium">
 
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:ems="2"
-        android:id="@+id/signupflag"
-        android:text="Already Have An Account? "
-        android:fontFamily="monospace"
-        android:gravity="left|center"
-        android:textColor="@android:color/black"
-        android:textSize="10sp"
-        android:textColorHint="@android:color/black"
-        android:textStyle="bold"
-        android:layout_marginBottom="25dp"
-        android:layout_width="250dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/ev"
-        android:layout_alignEnd="@+id/ev"
-        android:layout_alignLeft="@+id/email"
-        android:layout_alignStart="@+id/email"
-        android:paddingLeft="6dp" />
-
     <EditText
         android:layout_height="65dp"
         android:inputType="textEmailAddress"
@@ -153,22 +132,6 @@
         android:layout_alignLeft="@+id/cPassword"
         android:layout_alignStart="@+id/cPassword" />
 
-    <TextView
-        android:text="SIGN IN"
-        android:layout_height="wrap_content"
-        android:id="@+id/flag"
-        android:textSize="10sp"
-        android:background="@drawable/round"
-        android:textColor="@color/colorAccent"
-        android:gravity="center"
-        android:layout_width="65dp"
-        android:layout_alignBaseline="@+id/signupflag"
-        android:layout_alignBottom="@+id/signupflag"
-        android:layout_toLeftOf="@+id/pv"
-        android:layout_toStartOf="@+id/pv"
-        android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp" />
-
     <EditText
         android:layout_height="65dp"
         android:inputType="textPassword"
@@ -189,5 +152,38 @@
         android:layout_marginBottom="13dp"
         android:layout_above="@+id/email"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="2"
+        android:id="@+id/signupflag"
+        android:text="Already Have An Account? "
+        android:fontFamily="monospace"
+        android:gravity="left|center"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        android:textColorHint="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"
+        android:layout_width="250dp"
+        android:paddingLeft="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/email" />
+
+    <TextView
+        android:text="SIGN IN"
+        android:layout_height="wrap_content"
+        android:id="@+id/flag"
+        android:textSize="10sp"
+        android:background="@drawable/round"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:layout_width="65dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="7dp"
+        android:layout_alignBaseline="@+id/signupflag"
+        android:layout_alignBottom="@+id/signupflag"
+        android:layout_alignEnd="@+id/signupflag" />
 
 </RelativeLayout>

@@ -33,7 +33,6 @@ public class signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         my_Custom = Typeface.createFromAsset(getAssets() , "fonts/SEGOEUI.TTF");
-
         username = (EditText) findViewById(R.id.username);
         username.requestFocus();
 
