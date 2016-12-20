@@ -208,7 +208,7 @@ public class signup extends AppCompatActivity {
 
 
 ////////////////////////////////////  Buttons ///////////////////////////////////
-        Button Register = (Button) findViewById(R.id.Register);
+        Button Register = (Button) findViewById(R.id.login);
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

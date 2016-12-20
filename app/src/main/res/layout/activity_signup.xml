@@ -27,7 +27,7 @@
         android:foreground="@drawable/shape2"
         android:layout_width="265dp"
         android:layout_marginBottom="18dp"
-        android:layout_above="@+id/Register"
+        android:layout_above="@+id/login"
         android:layout_alignLeft="@+id/cPassword"
         android:layout_alignStart="@+id/cPassword" />
 
@@ -65,7 +65,7 @@
         android:layout_marginBottom="13dp" />
 
     <Button
-        android:id="@+id/Register"
+        android:id="@+id/login"
         android:background="@drawable/bt"
         android:layout_width="265dp"
         android:layout_height="50dp"

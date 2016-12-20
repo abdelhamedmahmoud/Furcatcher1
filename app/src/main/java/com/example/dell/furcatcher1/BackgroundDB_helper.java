@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
+import android.util.Base64;
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -30,8 +32,8 @@ public class BackgroundDB_helper extends AsyncTask<String , String , String> {
     @Override
     protected String doInBackground(String... params) {
         String type = params[0];
-        String Db_url= "http://192.168.2.106/login.php";
-        String Db_url2= "http://192.168.2.106/signup.php";
+        String Db_url= "https://furcatcher.000webhostapp.com/login.php";
+        String Db_url2= "https://furcatcher.000webhostapp.com/signup.php";
 
         if(type.equals("login"))
         {
@@ -142,6 +144,7 @@ public class BackgroundDB_helper extends AsyncTask<String , String , String> {
 
                     }
                 }).show();
+        Log.d("message:", s);
     }
 
     @Override

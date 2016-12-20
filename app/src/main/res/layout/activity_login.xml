@@ -34,7 +34,7 @@
             android:layout_marginTop="85dp" />
 
         <Button
-            android:id="@+id/Register"
+            android:id="@+id/login"
             android:background="@drawable/signin"
             android:layout_width="265dp"
             android:layout_height="50dp"
@@ -58,9 +58,9 @@
             android:elevation="14dp"
             android:layout_height="wrap_content"
             android:layout_width="105dp"
-            android:layout_below="@+id/Register"
-            android:layout_alignStart="@+id/Register"
-            android:layout_alignEnd="@+id/Register" />
+            android:layout_below="@+id/login"
+            android:layout_alignStart="@+id/login"
+            android:layout_alignEnd="@+id/login" />
 
         <EditText
             android:inputType="textPersonName"

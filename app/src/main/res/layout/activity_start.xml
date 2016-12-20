@@ -45,21 +45,22 @@
         android:layout_below="@+id/button5"
         android:layout_alignStart="@+id/exploreforone"
         android:layout_marginTop="6dp"
-        android:layout_width="155dp" />
+        android:layout_width="155dp"
+        android:layout_marginBottom="10dp" />
 
     <Button
         android:id="@+id/go"
         android:layout_marginStart="30dp"
         android:background="@drawable/round3"
         android:foreground="@drawable/iconforstart1"
-        android:layout_marginTop="255dp"
+        android:layout_marginTop="252dp"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/info"
         android:layout_width="70dp"
         android:layout_height="70dp" />
 
     <TextView
-        android:text="use this option to explore multiple pieces from our furniture store"
+        android:text="this option to explore multiple pieces from  store"
         android:layout_height="wrap_content"
         android:id="@+id/exmanytex"
         android:gravity="center"
@@ -67,10 +68,11 @@
         android:textStyle="bold|italic"
         android:textColor="@android:color/white"
         android:fontFamily="casual"
-        android:layout_alignBaseline="@+id/abouttex"
-        android:layout_alignBottom="@+id/abouttex"
         android:layout_alignStart="@+id/scango"
-        android:layout_width="155dp" />
+        android:layout_width="155dp"
+        android:layout_above="@+id/about"
+        android:layout_alignTop="@+id/abouttex"
+        android:layout_marginBottom="6dp" />
 
     <TextView
         android:text="Scan QR Code"
@@ -99,7 +101,7 @@
         android:layout_below="@+id/button3"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="12dp"
         android:layout_width="158dp"
         android:layout_marginLeft="3dp" />
 
@@ -129,7 +131,8 @@
         android:layout_height="43dp"
         android:layout_width="155dp"
         android:layout_below="@+id/go"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
 
     <Button
         android:layout_marginEnd="21dp"

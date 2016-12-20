@@ -1,9 +1,13 @@
 package com.example.dell.furcatcher1;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.facebook.CallbackManager;
@@ -28,6 +32,7 @@ public class login extends AppCompatActivity {
     private CallbackManager callbackManager;
     static String name;
     GoogleApiClient mGoogleApiClient;
+    EditText username, cPass;
 
 
     @Override
@@ -76,6 +81,29 @@ public class login extends AppCompatActivity {
                 signIn();
             }
         });
+
+
+
+
+
+        ///////////////////edittexts
+        username=(EditText)findViewById(R.id.userLogin);
+        cPass=(EditText)findViewById(R.id.passwordLogin);
+        ////////////////////////////
+
+        ///////////////button
+        Button login = (Button) findViewById(R.id.login);
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                    onlogin();
+
+
+            }
+        });
+        /////////////////////
     }
     private int RC_SIGN_IN =10;
     public void signIn() {
@@ -111,4 +139,19 @@ public class login extends AppCompatActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
+
+
+
+    public void onlogin ()
+    {
+        String Username=username.getText().toString();
+        String cpassword=cPass.getText().toString();
+
+        String Type = "login";
+        BackgroundDB_helper DB = new BackgroundDB_helper(this);
+        DB.execute(Type , Username , cpassword);
+
+
+    }
+
 }
