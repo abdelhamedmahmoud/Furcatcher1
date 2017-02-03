@@ -230,7 +230,20 @@ public class signup extends AppCompatActivity {
                 }
                 else
                 {
-                    onSignup();
+
+
+                    emailDb();
+                    Toast.makeText(signup.this, BackgroundDB_helper.message, Toast.LENGTH_LONG).show();
+                        if(BackgroundDB_helper.message.equals("conn done email is exist"))
+                        {
+                            email.requestFocus();
+                        }
+                        else
+                        {
+                            onSignup();
+                        }
+
+
                 }
 
             }
@@ -270,6 +283,23 @@ pass.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                                         username.requestFocus();
                                     }
                                 }).show();
+                    }
+
+
+
+                  else
+                    {
+                        usernameDb();
+//                        username.requestFocus();
+                        Toast.makeText(signup.this, BackgroundDB_helper.message, Toast.LENGTH_LONG).show();
+//                        if(BackgroundDB_helper.message.equals("conn done username is exist"))
+//                        {
+//                            username.requestFocus();
+//                        }
+//                        else
+//                        {
+//
+//                        }
                     }
 
         }
@@ -374,6 +404,28 @@ cPass.setOnFocusChangeListener(new View.OnFocusChangeListener() {
         String Type = "SignUp";
         BackgroundDB_helper DB = new BackgroundDB_helper(this);
         DB.execute(Type , Username , cpassword , e_mail);
+
+
+    }
+
+    public void usernameDb ()
+    {
+        String Username=username.getText().toString();
+        String Type = "userValidation";
+        BackgroundDB_helper DB = new BackgroundDB_helper(this);
+        DB.execute(Type , Username);
+
+
+    }
+
+
+    public void emailDb ()
+    {
+
+        String e_mail=email.getText().toString();
+        String Type = "emailValidation";
+        BackgroundDB_helper DB = new BackgroundDB_helper(this);
+        DB.execute(Type ,e_mail);
 
 
     }
